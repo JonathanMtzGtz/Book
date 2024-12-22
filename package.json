@@ -1,0 +1,17 @@
+{
+  "name": "Portafolio",
+  "version": "1.2.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "masonry-layout": "^4.2.2",
+    "three": "^0.171.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.3"
+  }
+}
