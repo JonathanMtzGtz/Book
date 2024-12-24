@@ -1,0 +1,14 @@
+{
+    "headers": {
+      "/**": {
+        "Content-Type": "text/html"
+      },
+      "/js/*.js": {
+        "Content-Type": "application/javascript"
+      },
+      "/css/*.css": {
+        "Content-Type": "text/css"
+      }
+    }
+  }
+  
