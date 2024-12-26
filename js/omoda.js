@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 // Importa los módulos adicionales desde `three/examples/jsm`
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
+import { GLTFLoader } from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
+import { RGBELoader } from '../node_modules/three/examples/jsm/loaders/RGBELoader.js';
 
 
 
