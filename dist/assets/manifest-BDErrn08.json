@@ -1,5 +1,5 @@
 {
-    "name": "Portafolio",
+    "name": "book",
     "short_name": "Jonathan Martinez",
     "start_url": "/PortFolio1",
     "display": "standalone",
@@ -8,7 +8,7 @@
     "orientation": "portrait-primary", 
      "screenshots": [
       {
-        "src": "/img/qwe.png",
+        "src": "qwe.png",
         "sizes": "1024x768",
         "type": "image/png",
         "form_factor": "wide"
@@ -28,7 +28,7 @@
         "type": "img/png","sizes": "128x128"
       },
       {
-        "src": "/img/icons/icon-144x144.png",
+        "src": "icon-144x144-DJH_i7di.png",
         "type": "image/png", "sizes": "144x144"
       },
       {
