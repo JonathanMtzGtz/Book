@@ -21,6 +21,18 @@
     
 
   }  
+
+.text-hero{
+  position: absolute !important;
+  top: 350px !important;
+  width: 100% !important;
+  text-align: center !important;
+
+}
+
+
+
+
   .movil{
     display: none !important;
   }

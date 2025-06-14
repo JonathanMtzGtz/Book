@@ -8,7 +8,7 @@
     "orientation": "portrait-primary", 
      "screenshots": [
       {
-        "src": "qwe.png",
+        "src": "/img/qwe.png",
         "sizes": "1024x768",
         "type": "image/png",
         "form_factor": "wide"
