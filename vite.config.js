@@ -8,10 +8,9 @@ export default defineConfig({
     outDir: '../dist', // Directorio de salida, fuera de "src"
     rollupOptions: {
       input: {
-        main: 'src/index.html', // Ruta absoluta desde el directorio raíz del proyecto
-        omoda: 'src/omoda.html',
-        contacto: 'src/contacto.html',
-        portafolio: 'src/portafolio.html',
+        main: 'index.html',
+        contacto: 'contacto.html',
+        portafolio: 'portafolio.html',
       },
     },
   },
