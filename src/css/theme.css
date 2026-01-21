@@ -10047,7 +10047,7 @@ img {
     height: 100vh;
     object-fit: cover;
     position: fixed;
-    top: 0;
+    top: 120px;
     left: 0;
     z-index: -1;
   }

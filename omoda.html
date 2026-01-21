@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omoda</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #000; 
+            color: white; 
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+        #three-container { 
+            width: 100%; 
+            height: 100vh; 
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .controls {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 15px 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            display: none; /* Oculto hasta que cargue */
+            max-width: 90%;
+        }
+        .text{
+            width: 40%;
+            left: 0%;
+            color: #000;
+            
+        }
+        .door-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            min-width: 140px;
+        }
+        .door-label {
+            font-size: 12px;
+            text-align: center;
+            color: #3498db;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .door-buttons {
+            display: flex;
+            gap: 5px;
+        }
+        button {
+            flex: 1;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 11px;
+        }
+        .open-btn {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            color: white;
+        }
+        .open-btn:hover {
+            background: linear-gradient(135deg, #27ae60, #219653);
+            transform: translateY(-2px);
+        }
+        .close-btn {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+        }
+        .close-btn:hover {
+            background: linear-gradient(135deg, #c0392b, #a93226);
+            transform: translateY(-2px);
+        }
+        
+        /* Instrucciones */
+        .instructions {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 12px;
+            z-index: 90;
+            border: 1px solid rgba(52, 152, 219, 0.5);
+        }
+        
+        /* Scroll spacer */
+        .content {
+            position: relative;
+            z-index: 1;
+            margin-top: 100vh;
+           padding: 2rem;
+            background: linear-gradient(to bottom, #1a1a1a, #000);
+            min-height: 100vh;
+            display: flex;
+
+            align-items: center;
+          background-image:url(src/img/web/omoda.webp);
+           width: 1920px; /* 4K screen */
+            height: 1080px;
+      
+            background-size: contain;
+        }
+        
+        @media (max-width: 768px) {
+            .controls {
+                bottom: 10px;
+                padding: 10px;
+            }
+            .door-group {
+                min-width: 120px;
+            }
+            button {
+                padding: 8px 10px;
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor Three.js -->
+    <div id="three-container"></div>
+    
+    <!-- Instrucciones -->
+    <div class="instructions">
+        🎮 Usa el ratón para rotar | Rueda para zoom | Click+drag para mover
+    </div>
+    
+    <!-- Controles de puertas 
+    <div class="controls">
+        <div class="door-group">
+            <div class="door-label">Izq Delantera</div>
+            <div class="door-buttons">
+                <button id="openLeftFrontDoorButton" class="open-btn">Abrir</button>
+                <button id="closeLeftFrontDoorButton" class="close-btn">Cerrar</button>
+            </div>
+        </div>
+        
+        <div class="door-group">
+            <div class="door-label">Der Delantera</div>
+            <div class="door-buttons">
+                <button id="openRightFrontDoorButton" class="open-btn">Abrir</button>
+                <button id="closeRightFrontDoorButton" class="close-btn">Cerrar</button>
+            </div>
+        </div>
+        
+        <div class="door-group">
+            <div class="door-label">Izq Trasera</div>
+            <div class="door-buttons">
+                <button id="openLeftRearDoorButton" class="open-btn">Abrir</button>
+                <button id="closeLeftRearDoorButton" class="close-btn">Cerrar</button>
+            </div>
+        </div>
+        
+        <div class="door-group">
+            <div class="door-label">Der Trasera</div>
+            <div class="door-buttons">
+                <button id="openRightRearDoorButton" class="open-btn">Abrir</button>
+                <button id="closeRightRearDoorButton" class="close-btn">Cerrar</button>
+            </div>
+        </div>
+    </div>
+    -->
+    <!-- Contenido adicional para scroll -->
+    <div class="content p-4 ">
+        <div class="text">
+   <h1>Omoda Regional Artist</h1>
+        <p>Regional Artist arrancó su debut el 23 de agosto durante el regreso a clases, marcando así el inicio de una emocionante travesía. Durante septiembre los competidores tendrán la oportunidad de sumergirse en el proceso creativo, desarrollando y perfeccionando sus propuestas. La culminación de este viaje de inspiración se vivirá en noviembre, cuando se lleve a cabo la selección final, la clausura y la premiación, con la gran celebración programada para el 28 de noviembre.
+
+“Este es más que un concurso; es una plataforma que busca desafiar a los más creativos e inspirarlos a alcanzar nuevas alturas. Regional Artist es el escenario donde la pasión, la innovación y la creatividad se unen para transformar el diseño automotriz y quién sabe, quizás el futuro de la movilidad”, mencionó Paulina Díaz de Guzmán, Directora de Marketing de OMODA | JAECOO.</p>
+    
+        </div>
+     </div>
+    
+    <!-- Script principal -->
+    <script type="module" src="./omoda.js"></script>
+</body>
+</html>

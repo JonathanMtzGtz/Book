@@ -22,17 +22,6 @@
 
   }  
 
-.text-hero{
-  position: absolute !important;
-  top: 350px !important;
-  width: 100% !important;
-  text-align: center !important;
-
-}
-
-
-
-
   .movil{
     display: none !important;
   }
@@ -44,5 +33,218 @@
   
     
 
-  }  
+  }
+  
+.navbar-scrolled {
+  background-color: #212529;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+
+
+ @media (max-width: 768px) {
+   .contact-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+;
+}
+    
+
+  }
+  .avion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.skill-card img {
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover img {
+  transform: scale(1.1);
+}
+.footer{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Estilos específicos para Three.js */
+.threejs-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+  transition: transform 0.3s ease;
+}
+
+.threejs-container:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 35px 60px rgba(0, 100, 255, 0.3);
+}
+
+#omoda-canvas,
+#unam-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.controls-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.control-badge {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.scene-controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-control {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-control:hover {
+  background: rgba(0, 100, 255, 0.7);
+  transform: scale(1.1);
+}
+
+/* Animación de entrada */
+@keyframes carDriveIn {
+  0% {
+    transform: translateX(100%) rotateY(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Efectos de texto */
+.gradient-text {
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Stats */
+.project-stats {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4facfe;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Scroll divider */
+.scroll-divider {
+  position: relative;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-line {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, #4facfe, transparent);
+}
+
+.scroll-arrow {
+  position: absolute;
+  animation: bounce 2s infinite;
+  color: #4facfe;
+  font-size: 2rem;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .threejs-container {
+    height: 400px;
+    margin-bottom: 3rem;
+  }
+  
+  .project-item {
+    min-height: auto;
+    padding: 5rem 0;
+  }
+}
+.video {
+    width: 100%;
+    height: auto;
+    max-height: 60vh; /* Para que no ocupe toda la pantalla */
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 2rem 0;
  
+}
+.svg svg{
+    width: 400px !important;
+}

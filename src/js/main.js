@@ -1,34 +1,70 @@
 
-// main.js ou main.ts
-import 'aos/dist/aos.css'; // Importar o CSS do AOS
-import AOS from 'aos';
+(function ($) {
+    "use strict";
 
-// Inicializar o AOS
-AOS.init();
 
-// SelectText
-function SelectText(element) {
-  var doc = document,
-      text = element,
-      range, selection;
+    /*==================================================================
+    [ Focus Contact2 ]*/
+    $('.input100').each(function(){
+        $(this).on('blur', function(){
+            if($(this).val().trim() != "") {
+                $(this).addClass('has-val');
+            }
+            else {
+                $(this).removeClass('has-val');
+            }
+        })    
+    })
+  
+  
+    /*==================================================================
+    [ Validate ]*/
+    var input = $('.validate-input .input100');
 
-  if (doc.body.createTextRange) {
-      range = document.body.createTextRange();
-      range.moveToElementText(text);
-      range.select();
-      /*
-      if(range.toString().length === 0){
-        range.moveToElementText(text);
-        range.select();
-      }
-      */
-  } else if (window.getSelection) {
-      selection = window.getSelection();
-      if(selection.toString().length === 0){
-        range = document.createRange();
-        range.selectNodeContents(text);
-        selection.removeAllRanges();
-        selection.addRange(range);
-      }
-  }
-}
+    $('.validate-form').on('submit',function(){
+        var check = true;
+
+        for(var i=0; i<input.length; i++) {
+            if(validate(input[i]) == false){
+                showValidate(input[i]);
+                check=false;
+            }
+        }
+
+        return check;
+    });
+
+
+    $('.validate-form .input100').each(function(){
+        $(this).focus(function(){
+           hideValidate(this);
+        });
+    });
+
+    function validate (input) {
+        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
+            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+                return false;
+            }
+        }
+        else {
+            if($(input).val().trim() == ''){
+                return false;
+            }
+        }
+    }
+
+    function showValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).addClass('alert-validate');
+    }
+
+    function hideValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).removeClass('alert-validate');
+    }
+    
+
+})(jQuery);

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="Portafolio profesional de Jonathan Martinez Gutierrez - Desarrollador web y diseñador 3D">
+  <meta name="author" content="Jonathan Martinez">
+  <title>Jonathan Martinez | Portafolio</title>
+  
+  <!-- Preconnect para fuentes externas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="src/img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/img/icons/favicon-16x16.png">
+  <link rel="manifest" href="src/js/manifest.json">
+  
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="src/css/theme.min.css">
+  <link rel="stylesheet" href="src/css/global.css">
+  
+  <!-- Preload de recursos críticos -->
+  <link rel="preload" as="style" href="src/css/theme.min.css">
+  <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  
+  <!-- Fuentes optimizadas -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-black text-white">
+  <!-- Barra de navegación -->
+  <nav id="navScroll" class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="src/img/logo.png" width="45" height="45" alt="Logo JMG" class="me-2">
+        <span class="fw-bold d-none d-md-inline">Jonathan Martinez Gutierrez</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portafolio.html">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section position-relative d-flex align-items-center justify-content-center text-center vh-100 overflow-hidden">
+    <div class="video-wrapper position-absolute w-100 h-100">
+      <div class="hero-overlay position-absolute w-100 h-100 bg-dark" style="opacity: 0.75;"></div>
+      <!-- Video optimizado con poster -->
+      <video class="w-100 h-100" style="object-fit: cover;" autoplay muted loop playsinline>
+        <source src="src/video/intro.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </div>
+    
+    <div class="container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <h1 class="display-3 fw-bold mb-4" >Elevando el estándar de tu presencia en la web.</h1>
+       
+          <a href="#portfolio" class="btn btn-light btn-lg px-4 py-3 fw-bold" data-aos="fade-up" data-aos-delay="200">
+            Ver portafolio <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección "Quién soy" -->
+  <section id="about" class="py-6 bg-dark  mb-4  p-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 text-center svg">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#ffffff" d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z"/></svg>
+        </div>
+        <div class="col-lg-7">
+          <h2 class="display-4 fw-bold mb-4 border-bottom border-white pb-3 d-inline-block">¿Quién soy?</h2>
+          <p class="lead">
+            Soy un desarrollador apasionado por la creación de experiencias digitales únicas. 
+          </p>
+          <p>
+            Estructuro soluciones web orientadas al rendimiento y la escalabilidad. Me dedico a transformar requerimientos complejos en arquitecturas digitales limpias y funcionales, con un sólido conocimiento en WordPress y expandiendo mis capacidades técnicas mediante la práctica con Ionic, Angular y React. Mi enfoque garantiza que cada proyecto esté construido sobre una base técnica sólida, optimizada y preparada para evolucionar al ritmo de las necesidades digitales actuales
+          </p>
+          <div class="mt-4">
+            <a href="contacto.html" class="btn btn-outline-light me-3">Contactar</a>
+            <a href="#portfolio" class="btn btn-light">Ver proyectos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de habilidades -->
+<section class="py-6 bg-black p-4 mb-4">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="display-4 fw-bold mb-3 text-white">Tecnologías y Habilidades</h2>
+      <p class="lead text-white-50">Herramientas que domino y utilizo en mis proyectos</p>
+    </div>
+   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
+  <!-- Solo necesitas .col dentro -->
+  <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="src/img/iconos/1.png" alt="HTML5" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">HTML5</h3>
+    </div>
+  </div>
+  
+  <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="src/img/iconos/16.png" alt="CSS3" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">CSS3</h3>
+    </div>
+  </div>
+  
+  <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="src/img/iconos/2.png" alt="JavaScript" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">JavaScript</h3>
+    </div>
+  </div>
+  
+  <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="src/img/iconos/5.png" alt="Angular" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">Angular</h3>
+    </div>
+  </div>
+  
+  <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="src/img/iconos/11.png" alt="WordPress" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">WordPress</h3>
+    </div>
+  </div>
+  
+  <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="src/img/iconos/20.png" alt="Firebase" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">Firebase</h3>
+    </div>
+  </div>
+
+    <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="src/img/iconos/ionic.png" alt="Firebase" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">Ionic</h3>
+    </div>
+  </div>
+
+    <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="src/img/iconos/react.png" alt="Firebase" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">React</h3>
+    </div>
+  </div>
+
+
+</div>
+  </div>
+</section>
+
+  <!-- Sección de proyectos -->
+  <section id="portfolio" class="py-6 bg-dark p-4">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-4 fw-bold mb-3">Proyectos</h2>
+        <p class="lead text-white-50">Trabajos recientes que muestran mis habilidades</p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Proyecto 1 -->
+        <div class="col-md-6 my-2">
+          <div class="project-card rounded-4 overflow-hidden bg-black position-relative">
+            <div class="project-image">
+              <img src="src/img/render.png" alt="Proyecto Omoda" class="img-fluid" loading="lazy">
+            </div>
+            <div class="project-content p-4">
+              <span class="badge bg-light text-dark mb-2">Desarrollo Webgl</span>
+              <h3 class="h4 mb-3">Evento Regional Artist OMODA</h3>
+              <p class="text-white-50">Plataforma web interactiva con Three.js para evento de premiación de artistas regionales con Omoda C5.</p>
+              <a href="https://test-vite-omoda-5o2c.onrender.com/" class="btn btn-sm btn-outline-light mt-2" target="_blank">
+                Ver proyecto <i class="fas fa-external-link-alt ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+     
+        
+        <!-- Proyecto 3 -->
+        <div class="col-md-6 my-2">
+          <div class="project-card rounded-4 overflow-hidden bg-black position-relative">
+            <div class="project-image">
+              <div class="ratio ratio-16x9">
+                <video autoplay muted loop playsinline class="w-100">
+                  <source src="src/video/Main.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <span class="badge bg-light text-dark mb-2">Render 3D</span>
+              <h3 class="h4 mb-3">Hero Group Rendering</h3>
+              <p class="text-white-50">Simulaciones virtuales interactivas para proyectos arquitectónicos y de diseño.</p>
+              <a href="https://www.linkedin.com/company/herohgroup/posts/?feedView=all#" class="btn btn-sm btn-outline-light mt-2">
+                Ver detalles
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+          <!-- Proyecto 4 -->
+        <div class="col-md-6 my-2">
+          <div class="project-card rounded-4 overflow-hidden bg-black position-relative">
+            <div class="project-image">
+              <div class="ratio ratio-16x9">
+               <img src="src/img/web/ban.png" alt="">
+              </div>
+            </div>
+            <div class="project-content p-4">
+              <span class="badge bg-light text-dark mb-2">App </span>
+              <h3 class="h4 mb-3">Frase Diaria</h3>
+              <p class="text-white-50">Contenido promocional con animaciones 3D para empresa de regalos corporativos.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.frasediaria.app&hl=es_MX" class="btn btn-sm btn-outline-light mt-2">
+                Ver detalles
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+           <!-- Proyecto 2 -->
+        <div class="col-md-6 my-2">
+          <div class="project-card rounded-4 overflow-hidden bg-black position-relative">
+            <div class="project-image">
+              <img src="src/img/unam/1.png" alt="Galería Virtual ENES UNAM" class="img-fluid" loading="lazy">
+            </div>
+            <div class="project-content p-4">
+              <span class="badge bg-light text-dark mb-2">3D Interactivo</span>
+              <h3 class="h4 mb-3">Galería Virtual ENES UNAM</h3>
+              <p class="text-white-50">Experiencia inmersiva del Centro Cultural ENES Morelia.</p>
+              <a href="https://ccum-virtual.onrender.com/" class="btn btn-sm btn-outline-light mt-2" target="_blank">
+                Ver proyecto <i class="fas fa-external-link-alt ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      
+      
+    </div>
+  </section>
+
+
+
+  
+
+
+
+  <!-- Sección de contacto -->
+  <section id="contact" class="py-6 ">
+    <div class=" container my-5 ">
+         <div class="row justify-content-center ">
+        <div class="col-12   mb-5 mb-lg-0 avion">
+          <img src="src/img/carta.svg" alt="Contacto" class="img-fluid " width="40%" height="300px"  ></div>
+        <div class=" col-12  text-center">
+          <h2 class="display-4 fw-bold mb-4 ">¿Tienes un proyecto en mente?</h2>
+          <p class="lead mb-5">¡Hablemos! Estoy disponible para colaborar en tu proyecto.</p>
+          
+          <div class="contact-info  rounded-4 p-4 p-lg-5 mb-5">
+            <div class="d-flex align-items-center justify-content-center gap-3 contact-info">
+                    <div>
+                    <div class="contact-icon mb-4">
+                    <i class="fas fa-envelope fa-3x text-light"></i>
+                  </div>
+                  <h3 class="h4 mb-3">Correo electrónico</h3>
+                  <p class="fs-5">
+                    <a href="mailto:martinezxdon@gmail.com" class="text-light text-decoration-none">
+                      martinezxdon@gmail.com
+                    </a>
+                  </p>
+                  </div>
+           
+                  <div>
+                    <div class="contact-icon mb-4 ">
+                    <i class="fas fa-phone fa-3x text-light"></i>
+                  </div>
+                  <h3 class="h4 mb-3">Teléfono</h3>
+                  <p class="fs-5">
+                    <a href="tel:+523344503715" class="text-light text-decoration-none">
+                      +52 334 450 3715
+                    </a>
+                  </p>
+                  </div>
+            </div>
+            
+            
+           
+          </div>
+          
+      
+        </div>
+      </div>
+    </div>
+   
+    
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark py-5">
+    <div class="footer">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="src/img/logo.png" width="40" height="40" alt="Logo JMG" class="me-2">
+            <span class="fw-bold">Jonathan Martinez Gutierrez</span>
+          </a>
+          <p class="mt-3 mb-0 text-white-50">ING Entornos Virtuales y Negocios Digitales</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0 text-white-50">&copy; 2025 Todos los derechos reservados</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="src/js/masonry.pkgd.min.js"></script>
+  <script src="src/js/main.js"></script>
+  
+</body>
+</html>
