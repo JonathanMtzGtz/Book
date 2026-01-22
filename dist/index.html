@@ -13,23 +13,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
-  <link rel="manifest" href="img/icons/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="src/img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/img/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/manifest-NRHO3cbG.json">
   
   <!-- Hojas de estilo -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   
   <!-- Preload de recursos críticos -->
   <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
   
   <!-- Fuentes optimizadas -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" crossorigin href="/assets/theme-Do1KtGc0.css">
-  <link rel="stylesheet" crossorigin href="/assets/theme-abUPiG5-.css">
-  <link rel="stylesheet" crossorigin href="/assets/global-C9cmODIG.css">
+  <link rel="stylesheet" crossorigin href="/assets/theme-Ds-3u2Hj.css">
+  <link rel="stylesheet" crossorigin href="/assets/global-CT4KxE76.css">
 </head>
 
 <body class="bg-black text-white">
@@ -62,20 +62,20 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero-section position-relative overflow-hidden">
-    <div class="hero-overlay position-absolute w-100 h-100 bg-dark opacity-75"></div>
+  <header class="hero-section position-relative d-flex align-items-center justify-content-center text-center vh-100 overflow-hidden">
+    <div class="video-wrapper position-absolute w-100 h-100">
+      <div class="hero-overlay position-absolute w-100 h-100 bg-dark" style="opacity: 0.75;"></div>
+      <!-- Video optimizado con poster -->
+      <video class="w-100 h-100" style="object-fit: cover;" autoplay muted loop playsinline>
+        <source src="/assets/intro-Dw211C9f.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </div>
     
-    <!-- Video optimizado con poster -->
-    <video class="hero-video text-center" autoplay muted loop playsinline width="100%" height="80%" >
-      <source src="/assets/intro-Dw211C9f.mp4" type="video/mp4">
-    
-      Tu navegador no soporta videos HTML5.
-    </video>
-    
-    <div class=" position-relative py-6 py-lg-7 text-center text-hero">
+    <div class="container position-relative">
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8">
-          <h2 class="display-3 fw-bold mb-4" data-aos="fade-up">Transformando ideas en experiencias digitales</h2>
+          <h1 class="display-3 fw-bold mb-4" >Elevando el estándar de tu presencia en la web.</h1>
        
           <a href="#portfolio" class="btn btn-light btn-lg px-4 py-3 fw-bold" data-aos="fade-up" data-aos-delay="200">
             Ver portafolio <i class="fas fa-arrow-right ms-2"></i>
@@ -89,18 +89,16 @@
   <section id="about" class="py-6 bg-dark  mb-4  p-5">
     <div class="container">
       <div class="row align-items-center g-5">
-        <div class="col-lg-5 text-center">
-          <img src="/assets/perfil-CfTUw6An.jpg" alt="Jonathan Martinez Gutierrez" 
-               class="img-fluid rounded-circle border border-4 border-white shadow-lg" 
-               width="300" height="300" loading="lazy">
+        <div class="col-lg-5 text-center svg">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#ffffff" d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z"/></svg>
         </div>
         <div class="col-lg-7">
           <h2 class="display-4 fw-bold mb-4 border-bottom border-white pb-3 d-inline-block">¿Quién soy?</h2>
           <p class="lead">
-            Soy un desarrollador apasionado por la creación de experiencias digitales únicas. Con experiencia en diseño web, animaciones 3D y efectos visuales, me especializo en convertir ideas en proyectos impactantes y funcionales.
+            Soy un desarrollador apasionado por la creación de experiencias digitales únicas. 
           </p>
           <p>
-            Mi enfoque combina habilidades técnicas con creatividad para ofrecer soluciones que no solo cumplen con los requisitos funcionales, sino que también cautivan a los usuarios finales.
+            Estructuro soluciones web orientadas al rendimiento y la escalabilidad. Me dedico a transformar requerimientos complejos en arquitecturas digitales limpias y funcionales, con un sólido conocimiento en WordPress y expandiendo mis capacidades técnicas mediante la práctica con Ionic, Angular y React. Mi enfoque garantiza que cada proyecto esté construido sobre una base técnica sólida, optimizada y preparada para evolucionar al ritmo de las necesidades digitales actuales
           </p>
           <div class="mt-4">
             <a href="contacto.html" class="btn btn-outline-light me-3">Contactar</a>
@@ -112,65 +110,86 @@
   </section>
 
   <!-- Sección de habilidades -->
-  <section class="py-6 bg-black p-4 mb-4">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="display-4 fw-bold mb-3">Tecnologías y Habilidades</h2>
-        <p class="lead text-muted">Herramientas que domino y utilizo en mis proyectos</p>
-      </div>
-      
-      <div class="row g-4 justify-content-center">
-        <div class="col-6 col-md-4 col-lg-2 text-center">
-          <div class="skill-card p-4 rounded-4 bg-dark h-100">
-            <img src="/assets/1-C13bYWfS.png" alt="HTML5" class="img-fluid mb-3" width="70" height="70">
-            <h3 class="h5">HTML5</h3>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 text-center">
-          <div class="skill-card p-4 rounded-4 bg-dark h-100">
-            <img src="/assets/16-RxOZjaef.png" alt="CSS3" class="img-fluid mb-3" width="70" height="70">
-            <h3 class="h5">Shopify</h3>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 text-center">
-          <div class="skill-card p-4 rounded-4 bg-dark h-100">
-            <img src="data:image/png;base64,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" alt="JavaScript" class="img-fluid mb-3" width="70" height="70">
-            <h3 class="h5">JavaScript</h3>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 text-center">
-          <div class="skill-card p-4 rounded-4 bg-dark h-100">
-            <img src="/assets/5-B_s1OhRy.png" alt="Angular" class="img-fluid mb-3" width="70" height="70">
-            <h3 class="h5">Angular</h3>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 text-center">
-          <div class="skill-card p-4 rounded-4 bg-dark h-100">
-            <img src="/assets/11-D1HM6PSf.png" alt="Three.js" class="img-fluid mb-3" width="70" height="70">
-            <h3 class="h5">Wordpress</h3>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 text-center">
-          <div class="skill-card p-4 rounded-4 bg-dark h-100">
-            <img src="/assets/20-CcyeO_wB.png" alt="Blender" class="img-fluid mb-3" width="70" height="70">
-            <h3 class="h5">Firebase</h3>
-          </div>
-        </div>
-      </div>
+<section class="py-6 bg-black p-4 mb-4">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="display-4 fw-bold mb-3 text-white">Tecnologías y Habilidades</h2>
+      <p class="lead text-white-50">Herramientas que domino y utilizo en mis proyectos</p>
     </div>
-  </section>
+   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
+  <!-- Solo necesitas .col dentro -->
+  <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="/assets/1-C13bYWfS.png" alt="HTML5" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">HTML5</h3>
+    </div>
+  </div>
+  
+  <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="/assets/16-DzZ6ySdw.png" alt="CSS3" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">CSS3</h3>
+    </div>
+  </div>
+  
+  <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="/assets/2-CSUU9gD6.png" alt="JavaScript" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">JavaScript</h3>
+    </div>
+  </div>
+  
+  <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="/assets/5-DldctmeY.png" alt="Angular" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">Angular</h3>
+    </div>
+  </div>
+  
+  <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="/assets/11-7SXjqAfI.png" alt="WordPress" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">WordPress</h3>
+    </div>
+  </div>
+  
+  <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="/assets/20-D9VWhTFB.png" alt="Firebase" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">Firebase</h3>
+    </div>
+  </div>
+
+    <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="/assets/ionic-BYOEkkca.png" alt="Firebase" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">Ionic</h3>
+    </div>
+  </div>
+
+    <div class="col text-center">
+    <div class="skill-card p-4 rounded-4  h-100">
+      <img src="/assets/react-4gEGafqw.png" alt="Firebase" class="img-fluid mb-3" width="70" height="70">
+      <h3 class="h5 text-white mb-0">React</h3>
+    </div>
+  </div>
+
+
+</div>
+  </div>
+</section>
 
   <!-- Sección de proyectos -->
   <section id="portfolio" class="py-6 bg-dark p-4">
     <div class="container">
       <div class="text-center mb-5">
-        <h2 class="display-4 fw-bold mb-3">Proyectos Destacados</h2>
-        <p class="lead text-muted">Trabajos recientes que muestran mis habilidades</p>
+        <h2 class="display-4 fw-bold mb-3">Proyectos</h2>
+        <p class="lead text-white-50">Trabajos recientes que muestran mis habilidades</p>
       </div>
       
       <div class="row g-4">
         <!-- Proyecto 1 -->
-        <div class="col-md-6">
+        <div class="col-md-6 my-2">
           <div class="project-card rounded-4 overflow-hidden bg-black position-relative">
             <div class="project-image">
               <img src="/assets/render-DMaiT-AP.png" alt="Proyecto Omoda" class="img-fluid" loading="lazy">
@@ -178,8 +197,8 @@
             <div class="project-content p-4">
               <span class="badge bg-light text-dark mb-2">Desarrollo Webgl</span>
               <h3 class="h4 mb-3">Evento Regional Artist OMODA</h3>
-              <p class="text-muted">Plataforma web interactiva con Three.js para evento de premiación de artistas regionales con Omoda C5.</p>
-              <a href="https://test-vite-omoda-5o2c.onrender.com/" class="btn btn-sm btn-outline-light mt-2" target="_blank">
+              <p class="text-white-50">Plataforma web interactiva con Three.js para evento de premiación de artistas regionales con Omoda C5.</p>
+              <a href="omoda.html" class="btn btn-sm btn-outline-light mt-2" target="_blank">
                 Ver proyecto <i class="fas fa-external-link-alt ms-2"></i>
               </a>
             </div>
@@ -189,7 +208,7 @@
      
         
         <!-- Proyecto 3 -->
-        <div class="col-md-6">
+        <div class="col-md-6 my-2">
           <div class="project-card rounded-4 overflow-hidden bg-black position-relative">
             <div class="project-image">
               <div class="ratio ratio-16x9">
@@ -201,7 +220,7 @@
             <div class="project-content p-4">
               <span class="badge bg-light text-dark mb-2">Render 3D</span>
               <h3 class="h4 mb-3">Hero Group Rendering</h3>
-              <p class="text-muted">Simulaciones virtuales interactivas para proyectos arquitectónicos y de diseño.</p>
+              <p class="text-white-50">Simulaciones virtuales interactivas para proyectos arquitectónicos y de diseño.</p>
               <a href="https://www.linkedin.com/company/herohgroup/posts/?feedView=all#" class="btn btn-sm btn-outline-light mt-2">
                 Ver detalles
               </a>
@@ -211,20 +230,18 @@
 
 
           <!-- Proyecto 4 -->
-        <div class="col-md-6">
+        <div class="col-md-6 my-2">
           <div class="project-card rounded-4 overflow-hidden bg-black position-relative">
             <div class="project-image">
               <div class="ratio ratio-16x9">
-                <video autoplay muted loop playsinline class="w-100">
-                  <source src="/assets/intro-Dw211C9f.mp4" type="video/mp4">
-                </video>
+               <img src="/assets/ban-BINnvx1F.png" alt="">
               </div>
             </div>
             <div class="project-content p-4">
-              <span class="badge bg-light text-dark mb-2">Animación</span>
-              <h3 class="h4 mb-3">Casa del Regalo</h3>
-              <p class="text-muted">Contenido promocional con animaciones 3D para empresa de regalos corporativos.</p>
-              <a href="#" class="btn btn-sm btn-outline-light mt-2">
+              <span class="badge bg-light text-dark mb-2">App </span>
+              <h3 class="h4 mb-3">Frase Diaria</h3>
+              <p class="text-white-50">Contenido promocional con animaciones 3D para empresa de regalos corporativos.</p>
+              <a href="https://play.google.com/store/apps/details?id=com.frasediaria.app&hl=es_MX" class="btn btn-sm btn-outline-light mt-2">
                 Ver detalles
               </a>
             </div>
@@ -233,7 +250,7 @@
 
 
            <!-- Proyecto 2 -->
-        <div class="col-md-6">
+        <div class="col-md-6 my-2">
           <div class="project-card rounded-4 overflow-hidden bg-black position-relative">
             <div class="project-image">
               <img src="/assets/1-BsKYlwe8.png" alt="Galería Virtual ENES UNAM" class="img-fluid" loading="lazy">
@@ -241,7 +258,7 @@
             <div class="project-content p-4">
               <span class="badge bg-light text-dark mb-2">3D Interactivo</span>
               <h3 class="h4 mb-3">Galería Virtual ENES UNAM</h3>
-              <p class="text-muted">Experiencia inmersiva para explorar el Centro Cultural ENES Morelia con tecnología interactiva y diseño 3D.</p>
+              <p class="text-white-50">Experiencia inmersiva del Centro Cultural ENES Morelia.</p>
               <a href="https://ccum-virtual.onrender.com/" class="btn btn-sm btn-outline-light mt-2" target="_blank">
                 Ver proyecto <i class="fas fa-external-link-alt ms-2"></i>
               </a>
@@ -251,69 +268,58 @@
       
       </div>
       
-      <div class="text-center mt-5 ">
-        <a href="portafolio.html" class="btn btn-light px-4 py-3 fw-bold">
-          Ver todos los proyectos <i class="fas fa-arrow-right ms-2"></i>
-        </a>
-      </div>
+      
     </div>
   </section>
+
+
+
+  
+
+
 
   <!-- Sección de contacto -->
   <section id="contact" class="py-6 ">
     <div class=" container my-5 ">
          <div class="row justify-content-center ">
-        <div class="col-lg-6 col-md-6  mb-5 mb-lg-0">
-          <img src="data:image/svg+xml,%3csvg%20width='702'%20height='456'%20viewBox='0%200%20702%20456'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M450.965%20177.149L480.972%20268.935C483.105%20275.456%20491.135%20277.787%20496.427%20273.418L586.046%20199.437C586.046%20199.437%20490.814%20162.29%20490.814%20164.316C490.814%20166.343%20450.965%20177.149%20450.965%20177.149Z'%20fill='%23B5D1DB'/%3e%3cpath%20d='M687.416%200.742321C628.891%2023.8916%20439.983%20101.301%20368.484%20130.633C359.043%20134.505%20359.61%20148.047%20369.33%20151.145L450.965%20177.149L480.878%20268.645C482.081%20272.324%20485.119%20274.697%20488.508%20275.335C491.259%20275.852%20495.319%20201.241%20495.319%20201.241C495.319%20201.241%20581.138%20264.885%20621.845%20294.944C631.874%20302.349%20646.194%20296.78%20648.569%20284.543C660.694%20222.047%20691.016%2065.7815%20701.382%2012.3578C702.94%204.32219%20695.024%20-2.26607%20687.416%200.742321Z'%20fill='white'/%3e%3cpath%20d='M488.508%20275.333C491.259%20275.85%20495.316%20201.239%20495.316%20201.239L636.305%2068.8073C637.258%2067.9117%20636.12%2066.4026%20634.996%2067.073L450.962%20177.149L480.876%20268.645C482.08%20272.324%20485.119%20274.697%20488.508%20275.333Z'%20fill='%23D6E2EA'/%3e%3cpath%20d='M0%20455C96.8376%20454.703%20225.565%20400.097%20251.404%20295.243C261.832%20252.93%20252.562%20207.592%20219.024%20176.709C176.642%20137.681%20130.108%20173.344%20141.558%20227.814C160.368%20317.297%20269.655%20383.558%20352.719%20384.496C400.728%20385.037%20445.769%20362.017%20463.028%20314.974'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'%20stroke-dasharray='5%205'/%3e%3c/svg%3e" alt="Contacto" class="img-fluid " width="100%" height="600px"  ></div>
-        <div class="col-lg-6 col-md-6  text-center">
+        <div class="col-12   mb-5 mb-lg-0 avion">
+          <img src="data:image/svg+xml,%3csvg%20width='702'%20height='456'%20viewBox='0%200%20702%20456'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M450.965%20177.149L480.972%20268.935C483.105%20275.456%20491.135%20277.787%20496.427%20273.418L586.046%20199.437C586.046%20199.437%20490.814%20162.29%20490.814%20164.316C490.814%20166.343%20450.965%20177.149%20450.965%20177.149Z'%20fill='%23B5D1DB'/%3e%3cpath%20d='M687.416%200.742321C628.891%2023.8916%20439.983%20101.301%20368.484%20130.633C359.043%20134.505%20359.61%20148.047%20369.33%20151.145L450.965%20177.149L480.878%20268.645C482.081%20272.324%20485.119%20274.697%20488.508%20275.335C491.259%20275.852%20495.319%20201.241%20495.319%20201.241C495.319%20201.241%20581.138%20264.885%20621.845%20294.944C631.874%20302.349%20646.194%20296.78%20648.569%20284.543C660.694%20222.047%20691.016%2065.7815%20701.382%2012.3578C702.94%204.32219%20695.024%20-2.26607%20687.416%200.742321Z'%20fill='white'/%3e%3cpath%20d='M488.508%20275.333C491.259%20275.85%20495.316%20201.239%20495.316%20201.239L636.305%2068.8073C637.258%2067.9117%20636.12%2066.4026%20634.996%2067.073L450.962%20177.149L480.876%20268.645C482.08%20272.324%20485.119%20274.697%20488.508%20275.333Z'%20fill='%23D6E2EA'/%3e%3cpath%20d='M0%20455C96.8376%20454.703%20225.565%20400.097%20251.404%20295.243C261.832%20252.93%20252.562%20207.592%20219.024%20176.709C176.642%20137.681%20130.108%20173.344%20141.558%20227.814C160.368%20317.297%20269.655%20383.558%20352.719%20384.496C400.728%20385.037%20445.769%20362.017%20463.028%20314.974'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'%20stroke-dasharray='5%205'/%3e%3c/svg%3e" alt="Contacto" class="img-fluid " width="40%" height="300px"  ></div>
+        <div class=" col-12  text-center">
           <h2 class="display-4 fw-bold mb-4 ">¿Tienes un proyecto en mente?</h2>
-          <p class="lead mb-5">¡Hablemos! Estoy disponible para colaborar en proyectos innovadores.</p>
+          <p class="lead mb-5">¡Hablemos! Estoy disponible para colaborar en tu proyecto.</p>
           
           <div class="contact-info  rounded-4 p-4 p-lg-5 mb-5">
-            <div class="d-flex align-items-center justify-content-center gap-3">
-              <div>
-               <div class="contact-icon mb-4">
-              <i class="fas fa-envelope fa-3x text-light"></i>
-            </div>
-            <h3 class="h4 mb-3">Correo electrónico</h3>
-            <p class="fs-5">
-              <a href="mailto:jonathanmtzgtzcontacto@gmail.com" class="text-light text-decoration-none">
-                jonathanmtzgtzcontacto@gmail.com
-              </a>
-            </p>
-            </div>
+            <div class="d-flex align-items-center justify-content-center gap-3 contact-info">
+                    <div>
+                    <div class="contact-icon mb-4">
+                    <i class="fas fa-envelope fa-3x text-light"></i>
+                  </div>
+                  <h3 class="h4 mb-3">Correo electrónico</h3>
+                  <p class="fs-5">
+                    <a href="mailto:martinezxdon@gmail.com" class="text-light text-decoration-none">
+                      martinezxdon@gmail.com
+                    </a>
+                  </p>
+                  </div>
            
-            <div>
-               <div class="contact-icon mb-4 ">
-              <i class="fas fa-phone fa-3x text-light"></i>
-            </div>
-            <h3 class="h4 mb-3">Teléfono</h3>
-            <p class="fs-5">
-              <a href="tel:+523344503715" class="text-light text-decoration-none">
-                +52 334 450 3715
-              </a>
-            </p>
-            </div>
+                  <div>
+                    <div class="contact-icon mb-4 ">
+                    <i class="fas fa-phone fa-3x text-light"></i>
+                  </div>
+                  <h3 class="h4 mb-3">Teléfono</h3>
+                  <p class="fs-5">
+                    <a href="tel:+523344503715" class="text-light text-decoration-none">
+                      +52 334 450 3715
+                    </a>
+                  </p>
+                  </div>
             </div>
             
             
            
           </div>
           
-          <div class="social-links d-flex justify-content-center gap-3">
-            <a href="https://www.linkedin.com/in/jonathan-martinez-guti%C3%A9rrez-631633173/" target="_blank" class="btn btn-outline-light rounded-circle p-3">
-              <i class="fab fa-linkedin-in fa-lg"></i>
-            </a>
-            <a href="https://github.com/JonathanMtzGtz" target="_blank" class="btn btn-outline-light rounded-circle p-3">
-              <i class="fab fa-github fa-lg"></i>
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=523344503715" target="_blank" class="btn btn-outline-light rounded-circle p-3">
-              <i class="fab fa-whatsapp fa-lg"></i>
-            </a>
-            <a href="https://www.artstation.com/jonathanmartinezgutierrez7" target="_blank" class="btn btn-outline-light rounded-circle p-3">
-              <i class="fab fa-artstation fa-lg"></i>
-            </a>
-          </div>
+      
         </div>
       </div>
     </div>
@@ -323,17 +329,17 @@
 
   <!-- Pie de página -->
   <footer class="bg-dark py-5">
-    <div class="container">
+    <div class="footer">
       <div class="row align-items-center">
         <div class="col-md-6 mb-4 mb-md-0">
           <a class="navbar-brand d-flex align-items-center" href="#">
             <img src="data:image/png;base64,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" width="40" height="40" alt="Logo JMG" class="me-2">
             <span class="fw-bold">Jonathan Martinez Gutierrez</span>
           </a>
-          <p class="mt-3 mb-0 text-muted">ING Entornos Virtuales y Negocios Digitales</p>
+          <p class="mt-3 mb-0 text-white-50">ING Entornos Virtuales y Negocios Digitales</p>
         </div>
         <div class="col-md-6 text-md-end">
-          <p class="mb-0 text-muted">&copy; 2025 Todos los derechos reservados</p>
+          <p class="mb-0 text-white-50">&copy; 2025 Todos los derechos reservados</p>
         </div>
       </div>
     </div>
@@ -342,26 +348,8 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="src/js/masonry.pkgd.min.js"></script>
+  <script src="src/js/main.js"></script>
   
-  <script>
-    // Inicializar AOS
-    AOS.init({
-      duration: 800,
-      once: true,
-      easing: 'ease-out-quad'
-    });
-    
-    // Efecto de scroll para navbar
-    window.addEventListener('scroll', function() {
-      const navbar = document.getElementById('navScroll');
-      if (window.scrollY > 100) {
-        navbar.classList.add('navbar-scrolled');
-      } else {
-        navbar.classList.remove('navbar-scrolled');
-      }
-    });
-  </script>
 </body>
 </html>
