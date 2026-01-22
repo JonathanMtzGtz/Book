@@ -1,14 +1,28 @@
 {
-    "headers": {
-      "/**": {
-        "Content-Type": "text/html"
-      },
-      "/js/*.js": {
-        "Content-Type": "application/javascript"
-      },
-      "/css/*.css": {
-        "Content-Type": "text/css"
-      }
+  "routes": [
+    {
+      "route": "/",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/contacto",
+      "serve": "/contacto.html"
+    },
+    {
+      "route": "/portafolio",
+      "serve": "/portafolio.html"
+    },
+    {
+      "route": "/omoda",
+      "serve": "/omoda.html"
+    }
+  ],
+  "headers": {
+    "/assets/js/*.js": {
+      "Content-Type": "application/javascript"
+    },
+    "/assets/css/*.css": {
+      "Content-Type": "text/css"
     }
   }
-  
+}
