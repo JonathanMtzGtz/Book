@@ -2,23 +2,20 @@ import { defineConfig } from 'vite';
 import path from 'path';
 
 export default defineConfig({
-  // Configuración básica
+
+  base: './', 
+
   publicDir: 'public',
   
   server: {
     port: 5173,
     host: true,
-    // Configuración específica para Windows
     cors: true,
     strictPort: false,
-    
-    // Headers simplificados
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
-    
     fs: {
-      // Permitir acceso desde cualquier ubicación
       strict: false,
       allow: ['..', path.resolve(__dirname, 'public')]
     }
@@ -26,17 +23,35 @@ export default defineConfig({
   
   build: {
     outDir: 'dist',
+  
+    assetsDir: 'assets',
+    assetsInlineLimit: 4096, 
+    
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
         contacto: path.resolve(__dirname, 'contacto.html'),
         portafolio: path.resolve(__dirname, 'portafolio.html'),
         omoda: path.resolve(__dirname, 'omoda.html'),
+      },
+      output: {
+        // ⚠️ IMPORTANTE: Esto organiza mejor los chunks
+        assetFileNames: (assetInfo) => {
+          let extType = assetInfo.name.split('.').at(1);
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+            extType = 'img';
+          } else if (/mp4|webm|ogg/i.test(extType)) {
+            extType = 'video';
+          }
+          return `assets/${extType}/[name]-[hash][extname]`;
+        },
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
       }
     }
   },
   
-  // Optimizaciones para Three.js
+
   optimizeDeps: {
     include: ['three']
   }
