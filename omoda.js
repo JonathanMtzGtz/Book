@@ -2,19 +2,19 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
+import modelUrl from './src/3d/Omoda.glb';
+import hdriUrl from './src/hdri/2.hdr';
+import audioOpenUrl from './src/audio/abrir.mp3';
+import audioCloseUrl from './src/audio/cerrar.mp3';
 
 // ===== CONFIGURACIÓN DE RUTAS =====
-// IMPORTANTE: En desarrollo con Vite, usa '/'
-// En producción, serán rutas relativas
-const IS_DEV = import.meta.env.DEV;
-const BASE_PATH = IS_DEV ? '/' : './';
-
 const PATHS = {
-  model: `${BASE_PATH}src/3d/Omoda.glb`,
-  hdri: `${BASE_PATH}src/hdri/2.hdr`,
-  audioOpen: `${BASE_PATH}src/audio/abrir.mp3`,
-  audioClose: `${BASE_PATH}src/audio/cerrar.mp3`
+  model: modelUrl,
+  hdri: hdriUrl,
+  audioOpen: audioOpenUrl,
+  audioClose: audioCloseUrl
 };
+
 
 console.log('📍 Rutas configuradas:', PATHS);
 

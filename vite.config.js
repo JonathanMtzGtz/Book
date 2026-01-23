@@ -3,6 +3,7 @@ import path from 'path';
 
 export default defineConfig({
   publicDir: 'public',
+  assetsInclude: ['**/*.glb', '**/*.hdr'],
   
   server: {
     port: 5173,
