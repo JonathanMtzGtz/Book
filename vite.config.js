@@ -36,8 +36,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
-        contacto: path.resolve(__dirname, 'contacto.html'),
-        portafolio: path.resolve(__dirname, 'portafolio.html'),
+   
         omoda: path.resolve(__dirname, 'omoda.html'),
       },
       output: {

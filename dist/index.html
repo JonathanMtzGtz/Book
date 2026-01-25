@@ -8,32 +8,32 @@
   <meta name="author" content="Jonathan Martinez">
   <title>Jonathan Martinez | Portafolio</title>
   
-  <!-- Preconnect para fuentes externas -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
-  <!-- Favicon -->
+
   <link rel="apple-touch-icon" sizes="180x180" href="src/img/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="src/img/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="src/img/icons/favicon-16x16.png">
   <link rel="manifest" href="/assets/3d/manifest-NRHO3cbG.json">
   
-  <!-- Hojas de estilo -->
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   
-  <!-- Preload de recursos críticos -->
-  <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+
+  <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
   
-  <!-- Fuentes optimizadas -->
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" crossorigin href="/assets/css/theme-Ds-3u2Hj.css">
-  <link rel="stylesheet" crossorigin href="/assets/css/global-CT4KxE76.css">
+  <script type="module" crossorigin src="/assets/js/main-DGMRpUkK.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/js/three.module-aXvcnW_K.js">
+  <link rel="stylesheet" crossorigin href="/assets/css/main-C_uB-mI-.css">
 </head>
 
 <body class="bg-black text-white">
-  <!-- Barra de navegación -->
+ 
   <nav id="navScroll" class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -51,46 +51,177 @@
             <a class="nav-link active" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="portafolio.html">Portafolio</a>
+            <a class="nav-link" href="#book">Portafolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="hero-section position-relative d-flex align-items-center justify-content-center text-center vh-100 overflow-hidden">
-    <div class="video-wrapper position-absolute w-100 h-100">
-      <div class="hero-overlay position-absolute w-100 h-100 bg-dark" style="opacity: 0.75;"></div>
-      <!-- Video optimizado con poster -->
-      <video class="w-100 h-100" style="object-fit: cover;" autoplay muted loop playsinline>
-        <source src="/assets/video/intro-Dw211C9f.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
-      </video>
+ <div id="vcode-window" class="vscode-container">
+    <div class="activity-bar">
+        <div class="" title="Explorer"><img src="/assets/webp/vscode-BfweeWlU.webp" alt="" width="13px"></div>
+          <div class="" title="Search"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAYAAAAVibZIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADtSURBVHgB7ZRBDoMgEEWHhngOewzjBm7Sm5TexJvoRj1GOULXmkj/pLWxxrEGu/QnZFDgifMZFAlq2zYNIZRoKa1IKeXRbJZl/vNOmtw0zR3BA1rJSHJLYBFa13XgRXme337MKdAMoDSCT7Rfvus6iz8iThenTdNOYXcmSRLuVoBeEMvdUIAMgpk8p3qry0tCvr88QY6vCE4zEB1Pr4RP5ShS+r3DYu4yvuooUv9w/4Ae0InWypSvM4PzSlvF83HuvQjlmwcXBVebo40ahuHR970VodZaj3BeGhtrfF77ow73410WoTEuM5DXSeNPgIqCIlhO3nYAAAAASUVORK5CYII=" alt="" width="17px"></div>
+        <div class="" title="Search"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAYAAAARfGZ1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIBSURBVHgBrVbLbcJAEN01FicOLsEl4CPfxBWEVBCngkAFMRWQVBBTQUgFBsTniDvAJfiExD9vzFoiDl6zgieNdrFn3szufAxnV2KxWBir1aqN7RPEhBiQEBJomjaoVCr9tA2/hngymbQ55+9EeDwehyALsEb4XRZi4n0IseEkvJocxB6MXrD1NptNx7btKK0zHo+dQqEQO4fYtVotyCWfTqcuFjJyYdCV6fq+bxaLRR+BsPV6bVEQWpbyfD43BbGXR0wAWYiT2bgucvJGzzLJoRQrwCCX+NwBIv/Ato2TGDLyR0oeGTAF7Pf7HywGon/QJHplqgqmiN1ud0om56aMnIlyU0JSTbA1ZOQhOzWLElBhVPcUeXa14CUdr8XUEZMj8lEmORLzicVAgyg5EJ0cUiNlkjcajSEUh7qu90TN54Kajuoc4tJvaULRaa9C2c9zkHQz1Xm9Xo+HmC4zQK3SFGSHw8GA0RIEHvb9UqkUWJYVkUM4pinpYC0TcbVa7ST2PC8SiIsu7cMR7Z0M9QA56jabzcH5w4vkYsT20pFQS1PnMVEROEWERhslUzCNf+Sz2ayFI35T6+PubHYD/iRU3OEXtuF2u31mN0JLEfvYRjQ6L30UVMHPiakqELGlOgmzEJeiuGPznsQEjb6RVKPIugNi5RErg04tjnV56a/BrfgF8lMUzKCE4TsAAAAASUVORK5CYII=" alt="" width="17px"></div>
+        <div class="" title="Source Control"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAYCAYAAAAYl8YPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIqSURBVHgBlVXLbcJAEF0bwwkppAPTAZwQX9kVhFQQU0GgAkwFkAoCFYRUABEgjpgOnArCCQQIyHtkjTbEUtiR7JldM29n3swshoDMZrOcYRjd0+nkYLnCM9ztdi3XdWnfLNZ8PrePx+MIQCsA9qAz2PdSqVQOOq8DZsL5ldEgErdUKrXK5XIDaz45RPygC2ZDj5FSGG0CsC/NnNAQiy8JeBGZukDafzhbLBaZzWbzRDoOh8OyVqsNL2Cmafbh6E8mEz+dTvfW67UtUxfb7fZdBULaHr53YZJXkUgkuBeQIhbLLBaLHRIP0DZ++MXDAW5j7ampM1ooAoVwzoIKA4e2SAWK9XzmjC8SD0BHyLbY7/dZHDJQo8IBjoyoER1SqVR6DARm8wImAT8kWBDXX3C6o0ZUobrPlorSNsWNQrKpk8lkO9pjMXCIB8Ax19atYNVqdTydTgdwboJ0GzpEVevsBNDyqBUZBRx5KIwP0wGHHh4WIw9aAq3IIgHAJxTT81HRjvotFkxtTHWfFZeXQXANFAsGhzr6jaXOXH8DUAjlI7UXESNWjAPnMbAsyysUCkuhIZcCYJwcJZqGLhDFkPy8kQt5p2VkhC12uA6YycElEPsHzvecO+wPefPKebwdDE+dzhinM6mcOwA2ZHR6l6P44enXLEazed0a/4IhnTGjU1PC2DSlGWhgCYNVxIiMOGuIJGABlMbU+0PhAGNEXNghI4TNPmNjukJTvgF12ED+RmyiAAAAAABJRU5ErkJggg==" alt="" width="17px"></div>
+        <div class="" title="Extensions"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADnSURBVHgB7ZRBDoMgEEUHYrxGvYbRRTmJ3KR4ksaTsDJeg3O4oTONbFopOK02TfoTHBKRR/j+EcDUOI4GyyX2XgjhcCgBvM01lisO8wJwxlIVwNOJHk3T9BA/BBUjYWcVC02HU61JSjnUde2AA0iZRfLe62maFAdSLJubxH0iw3c47WGjdvfgGJO3ap7noSxLTVeXWGpYAKWUs9YqhHSxNeiZa9t24AbtDoEM04/xgPrGEu2oUmtiYRQZRmUpdM9HSPAgGTRghvH3g/YHfB9Av6n7RNBI1H+evsOmVWHTsjiv4D2t5uQG4Axj+q2ExIEAAAAASUVORK5CYII=" alt="" width="17px"></div>
     </div>
     
-    <div class="container position-relative">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8">
-          <h1 class="display-3 fw-bold mb-4" >Elevando el estándar de tu presencia en la web.</h1>
-       
-          <a href="#portfolio" class="btn btn-light btn-lg px-4 py-3 fw-bold" data-aos="fade-up" data-aos-delay="200">
-            Ver portafolio <i class="fas fa-arrow-right ms-2"></i>
-          </a>
-        </div>
-      </div>
+    <div class="sidebar">
+        <div class="section-title">EXPLORER <span class="title-actions">⋯</span></div>
+        <div class="file-item active">↳ PORTFOLIO</div>
+        <div class="file-item">📁 src</div>
+        <div class="file-item">  📄 index.html</div>
+        <div class="file-item">  📄 skills.json</div>
+        <div class="file-item">  📄 projects.js</div>
+        <div class="file-item">  📄 contact.html</div>
+        <div class="file-item">  📄 package.json</div>
+        <div class="file-item">  📄 README.md</div>
     </div>
+
+   <div class="editor-area">
+    <div class="tabs">
+        <div class="tab active">index.html <span class="close-icon">×</span></div>
+        <div class="tab">skills.json <span class="close-icon">×</span></div>
+        <div class="tab">contact.html <span class="close-icon">×</span></div>
+    </div>
+    
+    <div class="editor-container">
+        <div class="line-numbers">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+            <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+            <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span>
+            <span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+        </div>
+        
+       <div class="code-content">
+    <pre><code><span class="comment">&lt;!-- Jonathan Martínez - Developer Profile --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"developer-profile"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;h1</span> <span class="attr">class</span>=<span class="string">"developer-name"</span><span class="tag">&gt;</span>
+    <span class="pln">Jonathan Martínez Gutiérrez</span>
+  <span class="tag">&lt;/h1&gt;</span>
+  
+  <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"developer-info"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"info-item"</span><span class="tag">&gt;</span>
+      <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"label"</span><span class="tag">&gt;</span><span class="pln">Title:</span><span class="tag">&lt;/span&gt;</span>
+      <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"value"</span><span class="tag">&gt;</span><span class="pln">Web Developer</span><span class="tag">&lt;/span&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"info-item"</span><span class="tag">&gt;</span>
+      <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"label"</span><span class="tag">&gt;</span><span class="pln">Specialization:</span><span class="tag">&lt;/span&gt;</span>
+      <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"value"</span><span class="tag">&gt;</span><span class="pln">Web & 3D Interactive</span><span class="tag">&lt;/span&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+  
+  <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"skills-section"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2</span> <span class="attr">class</span>=<span class="string">"section-title"</span><span class="tag">&gt;</span><span class="pln">Skills</span><span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;ul</span> <span class="attr">class</span>=<span class="string">"Habilidades"</span><span class="tag">&gt;</span>
+      <span class="tag">&lt;li&gt;</span><span class="pln">JavaScript</span><span class="tag">&lt;/li&gt;</span>
+      <span class="tag">&lt;li&gt;</span><span class="pln">WebGL</span><span class="tag">&lt;/li&gt;</span>
+      <span class="tag">&lt;li&gt;</span><span class="pln">React / Angular</span><span class="tag">&lt;/li&gt;</span>
+      <span class="tag">&lt;li&gt;</span><span class="pln">Shopify</span><span class="tag">&lt;/li&gt;</span>
+      <span class="tag">&lt;li&gt;</span><span class="pln">WordPress</span><span class="tag">&lt;/li&gt;</span>
+      <span class="tag">&lt;li&gt;</span><span class="pln">Firebase</span><span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;/ul&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+  
+  <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"contact-section"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2</span> <span class="attr">class</span>=<span class="string">"section-title"</span><span class="tag">&gt;</span><span class="pln">Contacto</span><span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"contact-info"</span><span class="tag">&gt;</span>
+      <span class="tag">&lt;p&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"contact-label"</span><span class="tag">&gt;</span><span class="pln">Email:</span><span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="string">"mailto:martinezxdon@gmail.com"</span><span class="tag">&gt;</span>
+          <span class="pln">martinezxdon@gmail.com</span>
+        <span class="tag">&lt;/a&gt;</span>
+      <span class="tag">&lt;/p&gt;</span>
+      <span class="tag">&lt;p&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"contact-label"</span><span class="tag">&gt;</span><span class="pln">Telefono:</span><span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="string">"tel:+523344503715"</span><span class="tag">&gt;</span>
+          <span class="pln">+52 334 450 3715</span>
+        <span class="tag">&lt;/a&gt;</span>
+      <span class="tag">&lt;/p&gt;</span>
+      <span class="tag">&lt;p&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"contact-label"</span><span class="tag">&gt;</span><span class="pln">Portfolio:</span><span class="tag">&lt;/span&gt;</span>
+        <span class="pln">https://book-cl5i.onrender.com/</span>
+      <span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+  
+  <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"Experiencia"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"experience-label"</span><span class="tag">&gt;</span><span class="pln">Experiencia:</span><span class="tag">&lt;/span&gt;</span>
+    <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="string">"experience-value"</span><span class="tag">&gt;</span><span class="pln">+ 2 Años </span><span class="tag">&lt;/span&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code></pre>
+</div>
+    </div>
+</div>
+    
+   
+    
+    <div class="scan-line"></div>
+</div>
+
+<div id="three-container"></div>
+<div id="css-container"></div>
+  <!-- Hero Section -->
+  <header class="hero-section position-relative d-flex align-items-center justify-content-center text-center vh-100">
+    <div class="video-wrapper position-absolute w-100 h-100">
+      <div class="hero-overlay position-absolute w-100 h-100 bg-dark" style="opacity: 0.75;"></div>
+<div id="container"></div> <div class="interface">
+    <h1>Jonathan Martinez Gutierrez</h1>
+    <p>Web Developer </p>
+    <button>Ver proyectos</button>
+</div>
+
+<style>
+    body { 
+        margin: 0; 
+        background: #050505; 
+        overflow-x: hidden; /* Evita scroll horizontal */
+        overflow-y: auto;   /* Permite scroll vertical */
+        font-family: 'Raleway', sans-serif; 
+    }
+   
+
+    #container { 
+        position: absolute; 
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        height: 100%; 
+        z-index: 999;
+    }
+
+    .interface {
+        position: absolute;
+        z-index: 10;
+        color: white;
+        text-align: center;
+        width: 100%;
+        top: 50%;
+        left: 30%;
+        transform: translate(-10%, -50%); /* Ajustado para dar espacio a la ventana */
+        pointer-events: none;
+    }
+    button { pointer-events: all; padding: 10px 20px; background: transparent; border: 1px solid cyan; color: cyan; cursor: pointer; }
+</style>
+    </div>
+
+
+
+  
+
   </header>
 
   <!-- Sección "Quién soy" -->
-  <section id="about" class="py-6 bg-dark  mb-4  p-5">
+  <section id="about" class="py-6 bg-dark    p-5">
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-lg-5 text-center svg">
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#ffffff" d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z"/></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid " viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#ffffff" d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z"/></svg>
         </div>
         <div class="col-lg-7">
           <h2 class="display-4 fw-bold mb-4 border-bottom border-white pb-3 d-inline-block">¿Quién soy?</h2>
@@ -110,84 +241,84 @@
   </section>
 
   <!-- Sección de habilidades -->
-<section class="py-6 bg-black p-4 mb-4">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="display-4 fw-bold mb-3 text-white">Tecnologías y Habilidades</h2>
+<section class=" bg-black ">
+  <div class="container p-5">
+    <div class="text-center mb-5 ">
+      <h2 class="display-4 fw-bold mb-3 text-white p-4">Tecnologías y Habilidades</h2>
       <p class="lead text-white-50">Herramientas que domino y utilizo en mis proyectos</p>
     </div>
-   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
-  <!-- Solo necesitas .col dentro -->
-  <div class="col text-center">
-    <div class="skill-card p-4 rounded-4  h-100">
-      <img src="/assets/img/1-C13bYWfS.png" alt="HTML5" class="img-fluid mb-3" width="70" height="70">
-      <h3 class="h5 text-white mb-0">HTML5</h3>
-    </div>
-  </div>
-  
-  <div class="col text-center">
-    <div class="skill-card p-4 rounded-4  h-100">
-      <img src="/assets/img/16-DzZ6ySdw.png" alt="CSS3" class="img-fluid mb-3" width="70" height="70">
-      <h3 class="h5 text-white mb-0">CSS3</h3>
-    </div>
-  </div>
-  
-  <div class="col text-center">
-    <div class="skill-card p-4 rounded-4  h-100">
-      <img src="/assets/img/2-CSUU9gD6.png" alt="JavaScript" class="img-fluid mb-3" width="70" height="70">
-      <h3 class="h5 text-white mb-0">JavaScript</h3>
-    </div>
-  </div>
-  
-  <div class="col text-center">
-    <div class="skill-card p-4 rounded-4  h-100">
-      <img src="/assets/img/5-DldctmeY.png" alt="Angular" class="img-fluid mb-3" width="70" height="70">
-      <h3 class="h5 text-white mb-0">Angular</h3>
-    </div>
-  </div>
-  
-  <div class="col text-center">
-    <div class="skill-card p-4 rounded-4  h-100">
-      <img src="/assets/img/11-7SXjqAfI.png" alt="WordPress" class="img-fluid mb-3" width="70" height="70">
-      <h3 class="h5 text-white mb-0">WordPress</h3>
-    </div>
-  </div>
-  
-  <div class="col text-center">
-    <div class="skill-card p-4 rounded-4  h-100">
-      <img src="/assets/img/20-D9VWhTFB.png" alt="Firebase" class="img-fluid mb-3" width="70" height="70">
-      <h3 class="h5 text-white mb-0">Firebase</h3>
-    </div>
-  </div>
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4 ">
+ 
+      <div class="col text-center">
+        <div class="skill-card p-4 rounded-4  h-100">
+          <img src="/assets/img/1-C13bYWfS.png" alt="HTML5" class="img-fluid mb-3" width="70" height="70">
+          <h3 class="h5 text-white mb-0">HTML5</h3>
+        </div>
+      </div>
+      
+      <div class="col text-center">
+        <div class="skill-card p-4 rounded-4  h-100">
+          <img src="/assets/img/16-DzZ6ySdw.png" alt="CSS3" class="img-fluid mb-3" width="70" height="70">
+          <h3 class="h5 text-white mb-0">CSS3</h3>
+        </div>
+      </div>
+      
+      <div class="col text-center">
+        <div class="skill-card p-4 rounded-4  h-100">
+          <img src="/assets/img/2-CSUU9gD6.png" alt="JavaScript" class="img-fluid mb-3" width="70" height="70">
+          <h3 class="h5 text-white mb-0">JavaScript</h3>
+        </div>
+      </div>
+      
+      <div class="col text-center">
+        <div class="skill-card p-4 rounded-4  h-100">
+          <img src="/assets/img/5-DldctmeY.png" alt="Angular" class="img-fluid mb-3" width="70" height="70">
+          <h3 class="h5 text-white mb-0">Angular</h3>
+        </div>
+      </div>
+      
+      <div class="col text-center">
+        <div class="skill-card p-4 rounded-4  h-100">
+          <img src="/assets/img/11-7SXjqAfI.png" alt="WordPress" class="img-fluid mb-3" width="70" height="70">
+          <h3 class="h5 text-white mb-0">WordPress</h3>
+        </div>
+      </div>
+      
+      <div class="col text-center">
+        <div class="skill-card p-4 rounded-4  h-100">
+          <img src="/assets/img/20-D9VWhTFB.png" alt="Firebase" class="img-fluid mb-3" width="70" height="70">
+          <h3 class="h5 text-white mb-0">Firebase</h3>
+        </div>
+      </div>
 
-    <div class="col text-center">
-    <div class="skill-card p-4 rounded-4  h-100">
-      <img src="/assets/img/ionic-BYOEkkca.png" alt="Firebase" class="img-fluid mb-3" width="70" height="70">
-      <h3 class="h5 text-white mb-0">Ionic</h3>
+        <div class="col text-center">
+        <div class="skill-card p-4 rounded-4  h-100">
+          <img src="/assets/img/ionic-BYOEkkca.png" alt="Firebase" class="img-fluid mb-3" width="70" height="70">
+          <h3 class="h5 text-white mb-0">Ionic</h3>
+        </div>
+      </div>
+
+        <div class="col text-center mb-4">
+        <div class="skill-card p-4 rounded-4  h-100">
+          <img src="/assets/img/react-4gEGafqw.png" alt="Firebase" class="img-fluid mb-3" width="70" height="70">
+          <h3 class="h5 text-white mb-0">React</h3>
+        </div>
+      </div>
+
+
     </div>
-  </div>
-
-    <div class="col text-center">
-    <div class="skill-card p-4 rounded-4  h-100">
-      <img src="/assets/img/react-4gEGafqw.png" alt="Firebase" class="img-fluid mb-3" width="70" height="70">
-      <h3 class="h5 text-white mb-0">React</h3>
-    </div>
-  </div>
-
-
-</div>
   </div>
 </section>
 
   <!-- Sección de proyectos -->
-  <section id="portfolio" class="py-6 bg-dark p-4">
-    <div class="container">
+  <section id="portfolio" class="bg-dark">
+    <div class="container py-6  p-4" id="book">
       <div class="text-center mb-5">
         <h2 class="display-4 fw-bold mb-3">Proyectos</h2>
         <p class="lead text-white-50">Trabajos recientes que muestran mis habilidades</p>
       </div>
       
-      <div class="row g-4">
+  <div class="row g-4">
         <!-- Proyecto 1 -->
         <div class="col-md-6 my-2">
           <div class="project-card rounded-4 overflow-hidden bg-black position-relative">
@@ -204,6 +335,23 @@
             </div>
           </div>
         </div>
+
+          <div class="col-md-6 my-2">
+          <div class="project-card rounded-4 overflow-hidden bg-black position-relative">
+            <div class="project-image">
+              <img src="/assets/img/muebles1-BxMekqZH.png" alt="muebles" class="img-fluid img" loading="lazy">
+            </div>
+            <div class="project-content p-4">
+              <span class="badge bg-light text-dark mb-2">Landing page</span>
+              <h3 class="h4 mb-3">Estilos Decoración </h3>
+              <p class="text-white-50">Landing page para muebleria de diseño en Mérida Yucatán</p>
+              <a href="https://estilosdecoracionmx.com/" class="btn btn-sm btn-outline-light mt-2" target="_blank">
+                Ver proyecto <i class="fas fa-external-link-alt ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
         
      
         
@@ -212,16 +360,17 @@
           <div class="project-card rounded-4 overflow-hidden bg-black position-relative">
             <div class="project-image">
               <div class="ratio ratio-16x9">
-                <video autoplay muted loop playsinline class="w-100">
-                  <source src="/assets/video/Main-CG0_Cz4t.mp4" type="video/mp4">
-                </video>
+               
+                  <img src="/assets/img/filtro-2EvmUxXh.png" alt="" class="img">
+                 
+           
               </div>
             </div>
             <div class="project-content p-4">
-              <span class="badge bg-light text-dark mb-2">Render 3D</span>
-              <h3 class="h4 mb-3">Hero Group Rendering</h3>
-              <p class="text-white-50">Simulaciones virtuales interactivas para proyectos arquitectónicos y de diseño.</p>
-              <a href="https://www.linkedin.com/company/herohgroup/posts/?feedView=all#" class="btn btn-sm btn-outline-light mt-2">
+              <span class="badge bg-light text-dark mb-2">Filtro web</span>
+              <h3 class="h4 mb-3">Filtro  </h3>
+              <p class="text-white-50">LYNK & CO  filtro para lanzamiento de la marca. </p>
+              <a href="https://filtro2.onrender.com/" class="btn btn-sm btn-outline-light mt-2">
                 Ver detalles
               </a>
             </div>
@@ -240,7 +389,7 @@
             <div class="project-content p-4">
               <span class="badge bg-light text-dark mb-2">App </span>
               <h3 class="h4 mb-3">Frase Diaria</h3>
-              <p class="text-white-50">App android para mostrar y compartir imagenes con frases alegres y emotivas.</p>
+              <p class="text-white-50">App android para mostrar y compartir imagenes con frases.</p>
               <a href="https://play.google.com/store/apps/details?id=com.frasediaria.app&hl=es_MX" class="btn btn-sm btn-outline-light mt-2">
                 Ver detalles
               </a>
@@ -279,10 +428,10 @@
 
 
   <!-- Sección de contacto -->
-  <section id="contact" class="py-6 ">
-    <div class=" container my-5 ">
-         <div class="row justify-content-center ">
-        <div class="col-12   mb-5 mb-lg-0 avion">
+  <secion id="contact" class=" bg-black ">
+    <div class=" bg-black  " id="contacto">
+         <div class="row justify-content-center  bg-black ">
+        <div class="col-12   mb-5 mb-lg-0 avion my-4 p-5">
           <img src="data:image/svg+xml,%3csvg%20width='702'%20height='456'%20viewBox='0%200%20702%20456'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M450.965%20177.149L480.972%20268.935C483.105%20275.456%20491.135%20277.787%20496.427%20273.418L586.046%20199.437C586.046%20199.437%20490.814%20162.29%20490.814%20164.316C490.814%20166.343%20450.965%20177.149%20450.965%20177.149Z'%20fill='%23B5D1DB'/%3e%3cpath%20d='M687.416%200.742321C628.891%2023.8916%20439.983%20101.301%20368.484%20130.633C359.043%20134.505%20359.61%20148.047%20369.33%20151.145L450.965%20177.149L480.878%20268.645C482.081%20272.324%20485.119%20274.697%20488.508%20275.335C491.259%20275.852%20495.319%20201.241%20495.319%20201.241C495.319%20201.241%20581.138%20264.885%20621.845%20294.944C631.874%20302.349%20646.194%20296.78%20648.569%20284.543C660.694%20222.047%20691.016%2065.7815%20701.382%2012.3578C702.94%204.32219%20695.024%20-2.26607%20687.416%200.742321Z'%20fill='white'/%3e%3cpath%20d='M488.508%20275.333C491.259%20275.85%20495.316%20201.239%20495.316%20201.239L636.305%2068.8073C637.258%2067.9117%20636.12%2066.4026%20634.996%2067.073L450.962%20177.149L480.876%20268.645C482.08%20272.324%20485.119%20274.697%20488.508%20275.333Z'%20fill='%23D6E2EA'/%3e%3cpath%20d='M0%20455C96.8376%20454.703%20225.565%20400.097%20251.404%20295.243C261.832%20252.93%20252.562%20207.592%20219.024%20176.709C176.642%20137.681%20130.108%20173.344%20141.558%20227.814C160.368%20317.297%20269.655%20383.558%20352.719%20384.496C400.728%20385.037%20445.769%20362.017%20463.028%20314.974'%20stroke='white'%20stroke-width='2'%20stroke-miterlimit='10'%20stroke-dasharray='5%205'/%3e%3c/svg%3e" alt="Contacto" class="img-fluid " width="40%" height="300px"  ></div>
         <div class=" col-12  text-center">
           <h2 class="display-4 fw-bold mb-4 ">¿Tienes un proyecto en mente?</h2>
@@ -328,8 +477,8 @@
   </section>
 
   <!-- Pie de página -->
-  <footer class="bg-dark py-5">
-    <div class="footer">
+  <footer class="bg-dark ">
+    <div class="footer py-3">
       <div class="row align-items-center">
         <div class="col-md-6 mb-4 mb-md-0">
           <a class="navbar-brand d-flex align-items-center" href="#">
@@ -344,12 +493,36 @@
       </div>
     </div>
   </footer>
+<!-- Scripts -->
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="src/js/masonry.pkgd.min.js"></script>
-  <script src="src/js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="src/js/masonry.pkgd.min.js"></script>
+
+<!-- Three.js -->
+
+<!-- Script de inicialización -->
+<script src="src/js/init.js"></script>
+
+<!-- Main.js (con verificación) -->
+<script>
+   
+    $(document).ready(function() {
+      
+        if (typeof window.mainJS !== 'undefined') {
+            window.mainJS.init();
+        }
+    });
+</script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="src/js/masonry.pkgd.min.js"></script>
+
+
+
+
+
+<script src="src/js/main.js"></script>
   
 </body>
 </html>

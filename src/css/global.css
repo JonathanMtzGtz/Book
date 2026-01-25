@@ -4,9 +4,18 @@
     position: fixed; /* Se asegura de ocupar toda la ventana */
     top: 0;
     left: 0;
-    z-index: -1 !important;
+    z-index: -1;
 
   }
+
+#css-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+ }
   .perfil{
     border-radius: 20px;
   }
@@ -247,4 +256,200 @@
 }
 .svg svg{
     width: 400px !important;
+}
+.img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  
+}
+.project-image{
+    min-height: 185px !important;
+}
+.vscode-container {
+    position: absolute;
+    left: 25% !important; /* Lo movemos a la izquierda como en la imagen */
+    top: 50%;
+    transform: translateY(-50%) perspective(1200px) rotateY(25deg) rotateX(5deg);
+    width: 700px;
+    height: 550px;
+    display: flex;
+    background: rgba(0, 20, 30, 0.4); /* Azul muy oscuro traslúcido */
+    backdrop-filter: blur(12px);      /* Efecto cristal (esencial) */
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    border-radius: 8px;
+    box-shadow: -20px 40px 60px rgba(0, 0, 0, 0.8), 
+                0 0 20px rgba(0, 255, 255, 0.1);
+  
+    overflow: hidden;
+    color: #e0e0e0;
+}
+
+
+/* Decoración interna del editor */
+.activity-bar { width: 45px; background: rgba(0, 0, 0, 0.3); display: flex; flex-direction: column; align-items: center; padding-top: 15px; border-right: 1px solid rgba(255,255,255,0.05); }
+.icon { width: 22px; height: 22px; background: rgba(255,255,255,0.1); margin-bottom: 15px; border-radius: 4px; }
+.icon.active { background: #00ffff; box-shadow: 0 0 10px #00ffff; }
+
+.sidebar { width: 140px; background: rgba(0, 0, 0, 0.1); padding: 15px; font-size: 11px; text-align: start !important;}
+.editor-area { flex: 1; display: flex; flex-direction: column; background: rgba(0, 0, 0, 0.2); }
+.tabs { display: flex; background: rgba(0,0,0,0.4); height: 35px; border-bottom: 1px solid rgba(0,255,255,0.2); }
+.tab { padding: 8px 15px; font-size: 12px; border-right: 1px solid rgba(0,0,0,0.2); display: flex; align-items: center; background: rgba(0,255,255,0.05); }
+
+/* Colores de código (Sintaxis) */
+.code-content { padding: 20px; font-family: 'Courier New', monospace; font-size: 14px; text-align: start !important; }
+.keyword { color: #c678dd; }
+.variable { color: #e06c75; }
+.string { color: #98c379; }
+.function { color: #61afef; }
+
+/* Línea de escaneo animada */
+.scan-line {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 255, 255, 0.1), transparent);
+    top: -100px;
+    animation: scan 4s infinite linear;
+}
+
+@keyframes scan {
+    0% { top: -100px; }
+    100% { top: 100%; }
+}
+
+.editor-container {
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.line-numbers {
+    width: 35px;
+    padding: 20px 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: 'Fira Code', monospace;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    user-select: none; /* Evita que se seleccionen los números */
+}
+
+.line-numbers span {
+    line-height: 1.6; /* Debe coincidir con el line-height del código */
+}
+
+.code-content {
+    padding: 20px 15px;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #d4d4d4;
+}
+
+/* Colores de sintaxis para HTML */
+.tag { color: #569cd6; }    /* Azul para tags */
+.attr { color: #9cdcfe; }   /* Azul claro para atributos */
+.string { color: #ce9178; } /* Naranja/Marrón para strings */
+.comment { color: #6a9955; font-style: italic; } /* Verde para comentarios */
+
+.close-icon {
+    margin-left: 8px;
+    font-size: 14px;
+    opacity: 0.5;
+}
+#vcode-window.vscode-container {
+    z-index: 1001 !important; /* Mayor que el contenedor de Three.js */
+}
+
+#container {
+    z-index: 999; /* Menor que el VS Code */
+}
+
+/* Añade al final de tu global.css */
+#vcode-window.vscode-container {
+    position: absolute !important;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%) perspective(1200px) rotateY(25deg) rotateX(5deg);
+    width: 700px;
+    height: 550px;
+    display: flex !important; /* Forzar display */
+    background: rgba(0, 20, 30, 0.95) !important;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    border-radius: 8px;
+    box-shadow: -20px 40px 60px rgba(0, 0, 0, 0.8), 
+                0 0 20px rgba(0, 255, 255, 0.3);
+    z-index: 1000 !important;
+    overflow: hidden;
+    color: #e0e0e0;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* Asegurar que el CSS3D no interfiera con el layout normal */
+#css-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#three-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+/* Añade esto al final de tu global.css */
+
+/* Garantizar que la ventana VS Code sea visible */
+#vcode-window.vscode-container {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    z-index: 1000 !important;
+}
+
+/* Prevenir que Three.js interfiera con el CSS normal */
+#three-container canvas {
+    pointer-events: none !important;
+}
+
+/* Garantizar que el contenedor CSS3D no oculte nada */
+#css-container {
+    pointer-events: none !important;
+}
+
+/* Estilo para el botón en la ventana */
+.interface button {
+    pointer-events: auto !important;
+    z-index: 1001 !important;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+  #vcode-window.vscode-container {
+    display: none !important;
+  ;
+  }
+  .interface{
+    left: 12% !important;
+  }
 }
