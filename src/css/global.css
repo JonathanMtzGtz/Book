@@ -450,6 +450,32 @@
   ;
   }
   .interface{
-    left: 12% !important;
+    left: 25% !important;
+  
+  
   }
 }
+
+@media (min-width: 1024px) {
+  #vcode-window.vscode-container {
+    width: 600px !important;
+    left: 32% !important;
+  }
+  .interface{
+    width: 40% !important;
+    left: 60% !important;
+ 
+  }
+}
+
+   .interface {
+        position: absolute;
+        z-index: 10;
+        color: white;
+        text-align: center;
+      
+        top: 50%;
+        left: 30%;
+        transform: translate(-10%, -50%); /* Ajustado para dar espacio a la ventana */
+        pointer-events: none;
+    }
